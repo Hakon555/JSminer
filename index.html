@@ -1,0 +1,49 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="miner" id="miner">
+    <div class="menu">
+        <div class="new-game">Новая игра</div>
+        <div class="new-game-form">
+
+            <div class="left-block">
+                <input class="chooseGame" name="chooseGame" type="radio" id="novice" checked>
+                <label for="novice">Новичек</label><br>
+                <input class="chooseGame" name="chooseGame" type="radio" id="advanced">
+                <label for="advanced">Любитель</label><br>
+                <input class="chooseGame" name="chooseGame" type="radio" id="master">
+                <label for="master">Профессионал</label>
+                <input class="chooseGame" name="chooseGame" type="radio" id="custom">
+                <label for="custom">Свой</label>
+            </div>
+
+            <div class="right-block">
+                <p class="custom">Ширина:</p>
+                <input class="custom width" type="text" id="width" value="9" disabled>
+                <p class="custom">Высота:</p>
+                <input class="custom height"type="text" id="height" value="9" disabled>
+                <p class="custom">Количество мин:</p>
+                <input class="custom mines" type="text" id="mines" value="10" disabled>
+            </div>
+
+            <div class="start-game">НАЧАТЬ ИГРУ</div>
+        </div>
+        <div class="time">0</div>
+        <div class="mine-left">0</div>
+    </div>
+    <div class="field">
+        <div class="cell number one" data-idcell="1">2</div>
+    </div>
+    <div class="win">
+        <p class="alert">WIN!</p>
+        <p class="game-time">0</p>
+    </div>
+</div>
+<p class="hint">Начать новую игру можно по нажатию клавиши "F2", либо в меню "новая игра".</p>
+
+<script src="script.js"></script>
+</body>
+</html>

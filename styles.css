@@ -1,0 +1,218 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.miner{
+    width: 250px;
+    position: relative;
+    margin: 50px auto;
+    border: 2px solid #8d8585;
+    border-radius: 5px;
+}
+.miner .menu{
+    width: 100%;
+    height: 37px;
+    background: #d1dde8;
+}
+.miner .new-game{
+    height: 30px;
+    margin-top: 2px;
+    background: linear-gradient(45deg, #dde3eb, #9098a2);
+    border: 1px solid slategrey;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+    font-family: sans-serif;
+    line-height: 2.1;
+    color: #38384b;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+.new-game-form{
+    position: absolute;
+    top: 37px;
+    left: 0;
+    width: 305px;
+    background: #d1dde8;
+    border: 1px solid #8d8585;
+    border-radius: 5px;
+    display: none;
+    z-index: 100;
+}
+.left-block{
+    display: inline-block;
+    vertical-align: top;
+    width: 155px;
+}
+.right-block{
+    display: inline-block;
+    vertical-align: top;
+    width: 145px;
+}
+.new-game-form label{
+    display: inline-block;
+    vertical-align: top;
+    font-family: sans-serif;
+    color: #38384b;
+    margin: 10px;
+    margin-right: 0;
+}
+.new-game-form input{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 12px;
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: #38384b;
+    font-size: 17px;
+    background: #e4e4e6;
+}
+.new-game-form p.custom{
+    display: block;
+    margin: 10px;
+    vertical-align: top;
+    font-family: sans-serif;
+    color: #38384b;
+    margin-left: 0;
+}
+.new-game-form input.custom{
+    display: block;
+    margin: 10px;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    margin-left: 0;
+}
+.new-game-form .start-game{
+    height: 30px;
+    background: linear-gradient(45deg, #dde3eb, #9098a2);
+    border: 1px solid slategrey;
+    border-radius: 5px;
+    vertical-align: top;
+    padding: 0 10px;
+    font-family: sans-serif;
+    line-height: 2.2;
+    color: #38384b;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 95px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.miner .time{
+    display: inline-block;
+    vertical-align: top;
+    color: #34348d;
+    text-align: center;
+    padding: 0 10px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin-top: 7px;
+    width: 40px;
+}
+.miner .mine-left{
+    display: inline-block;
+    vertical-align: top;
+    height: 25px;
+    background: linear-gradient(45deg, #dde3eb, #9098a2);
+    border: 1px solid slategrey;
+    color: #34348d;
+    text-align: center;
+    padding: 0 10px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin-top: 5px;
+    width: 30px;
+}
+.win{
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    height: 80px;
+    top: 50px;
+    background: #d1dde8;
+    border: 1px solid slategrey;
+    border-radius: 5px;
+    display: none;
+}
+.win .alert{
+    text-align: center;
+    margin-bottom: 0;
+}
+.win .game-time{
+    text-align: center;
+    width: 100%;
+}
+.win .game-time:before{
+    content: "Время:";
+    display: inline-block;
+    margin-right: 5px;
+}
+.win .game-time:after{
+    content: "сек.";
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.miner .field{
+    width: 100%;
+    font-size: 0;
+}
+.miner .field .cell{
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(45deg, #00c4ff, #0072ff);
+    border: 1px solid #004b80;
+    font-size: 19px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 1.3;
+    cursor: pointer;
+    font-weight: 700;
+}
+.miner .field .cell:hover{
+    background: linear-gradient(45deg, #00f3ff, #00a1ff);
+}
+.miner .field .cell.number{
+    background: linear-gradient(45deg, #74aec0a6, #dde3eb);
+}
+.miner .field .cell.empty{
+    background: linear-gradient(45deg, #74aec0a6, #dde3eb);
+}
+.miner .field .cell.flag{
+    background: url(images/flag.png);
+}
+.miner .field .cell.mine{
+    background: url(images/mine.png);
+}
+.one{
+    color: blue;
+}
+.two{
+    color: green;
+}
+.three{
+    color: red;
+}
+.four{
+    color: blue;
+}
+.five{
+    color: purple;
+}
+.six{
+    color: darkred;
+}
+.seven{
+    color: black;
+}
+.hint{
+    text-align: center;
+}
